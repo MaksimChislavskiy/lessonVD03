@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="bg-dark text-white">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center py-3">
+                <h1 class="m-0">Путешествуй с нами</h1>
+                <nav>
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Главная</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Туры</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">О компании</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main class="container my-5">
+        <!-- Секция 1: Слайдер -->
+        <section class="mb-5">
+            <h2 class="text-center mb-4">Наши работы</h2>
+            <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="ca6df8e9569e485873fb1e4e270c3869.jpg" class="d-block w-50 h-20 mx-auto" alt="Slide 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="f557622f70f6018c831e2a2d12102162.jpg" class="d-block w-50 h-20 mx-auto" alt="Slide 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="01bb71f3a7c4374a9e1829f1a7fdfdd3.jpg" class="d-block w-50 h-20 mx-auto" alt="Slide 3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Секция 2: Карточки -->
+        <section class="mb-5">
+            <h2 class="text-center mb-4">Наши туры</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="ca6df8e9569e485873fb1e4e270c3869.jpg" class="card-img-top" alt="Service 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Горные туры</h5>
+                            <p class="card-text">Восхождения на самые живописные вершины Альп с опытными гидами</p>
+                            <a href="#" class="btn btn-primary">Выбрать тур</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="f557622f70f6018c831e2a2d12102162.jpg" class="card-img-top" alt="Service 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Пляжный отдых</h5>
+                            <p class="card-text">Лучшие курорты Средиземноморья и тропических островов</p>
+                            <a href="#" class="btn btn-primary">Выбрать тур</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="01bb71f3a7c4374a9e1829f1a7fdfdd3.jpg" class="card-img-top" alt="Service 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Экскурсионные туры</h5>
+                            <p class="card-text">Знакомство с культурой и историей европейских столиц</p>
+                            <a href="#" class="btn btn-primary">Выбрать тур</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция 3: Аккордеон -->
+        <section>
+            <h2 class="text-center mb-4">Часто задаваемые вопросы</h2>
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                            Какие документы нужны для поездки?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Для большинства туров требуется загранпаспорт и виза (при необходимости). Полный список документов мы предоставляем при бронировании.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                            Есть ли страховка в стоимость тура?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Да, все наши туры включают медицинскую страховку. Дополнительные страховки можно оформить по желанию.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                            Можно ли изменить даты тура после бронирования?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Да, в большинстве случаев мы можем перенести даты тура. Условия переноса зависят от конкретного отеля и авиабилетов.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Футер -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Контактная информация</h3>
+                    <p><i class="bi bi-geo-alt"></i> Адрес: г. Город, ул. Улица, д. 1</p>
+                    <p><i class="bi bi-telephone"></i> Телефон: +7 (123) 456-78-90</p>
+                    <p><i class="bi bi-envelope"></i> Email: info@example.com</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <h3>Мы в соцсетях</h3>
+                    <div class="social-links">
+                        <a href="#" class="me-2"><i class="bi bi-facebook fs-3"></i></a>
+                        <a href="#" class="me-2"><i class="bi bi-instagram fs-3"></i></a>
+                        <a href="#" class="me-2"><i class="bi bi-twitter fs-3"></i></a>
+                        <a href="#" class="me-2"><i class="bi bi-youtube fs-3"></i></a>
+                    </div>
+                    <p class="mt-3">&copy; 2025 Путешествуй с нами. Все права защищены.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
